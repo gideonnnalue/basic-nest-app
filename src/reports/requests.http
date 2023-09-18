@@ -1,0 +1,20 @@
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+  "make": "toyota3",
+  "model": "coroll3a",
+  "year": 1981,
+  "mileage": 100000,
+  "lng": 0,
+  "lat": 0,
+  "price": 50000
+}
+
+### Approve an existing report
+PATCH http://localhost:3000/reports/4
+Content-Type: application/json
+
+{
+  "approved": false
+}
